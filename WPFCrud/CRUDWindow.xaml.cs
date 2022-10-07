@@ -86,7 +86,7 @@ namespace WPFCrud
             {
                 if (isValid())
                 {
-                    SqlCommand cmd = new SqlCommand("INSERT INTO FirsT VALUES (@Name, @Age, @Gender, @City)");
+                    SqlCommand cmd = new SqlCommand("INSERT INTO FirsT VALUES (@Name, @Age, @Gender, @City)"); //db'ye baglanıldı.
                     cmd.Connection = con;
                     cmd.CommandType = CommandType.Text;
                     cmd.Parameters.AddWithValue("@Name", name_txt.Text);
